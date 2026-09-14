@@ -1,120 +1,145 @@
 <!DOCTYPE html>
-<html lang="id">
+<html lang="en">
 <head>
     <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Curriculum Vitae Abdullah Ubaid">
+    <meta name="author" content="ifs24051">
     <title>Curriculum Vitae</title>
 </head>
 <body>
-
-    <!-- Navigasi -->
-    <nav>
-        <a href="index.html">1. IMDb Top 3 Movies</a> | 
-        <a href="blog.html">2. Dev Blogs</a> | 
-        <a href="form.html">3. Form Pendaftaran Akun</a> | 
-        <a href="cv.html">4. Curriculum Vitae (CV)</a>
+    <nav aria-label="Navigasi utama">
+        <a href="index.html">IMDb Top 3 Movies</a> |
+        <a href="blog.html">Dev Blogs</a> |
+        <a href="form.html">Form Pendaftaran Akun</a> |
+        <a href="cv.html">Curriculum Vitae</a>
     </nav>
+
     <hr>
 
-    <!-- Tabel utama layout 2 kolom -->
-    <table width="100%" cellpadding="10">
-        <tr>
-            <!-- KOLOM KIRI (Foto, Pendidikan, Pengalaman) -->
-            <td width="50%" valign="top">
-                <!-- Ukuran photo 200 -->
-                <img src="https://placehold.co/200x200" alt="Foto Profil" width="200" height="200">
+    <main>
+    <!-- A table is used to keep the two CV columns organized without CSS. -->
+    <table border="0" cellpadding="8" cellspacing="0" width="100%">
+        <tbody>
+            <tr>
+                <td width="42%" valign="top">
+                    <img src="images/abdul.png"
+                         alt="Foto Abdullah Ubaid"
+                         width="200"
+                         height="200">
 
-                <h2>Pendidikan</h2>
-                <hr>
-                <p><b>Sarjana Informatika</b> | IPK : 3.6/4.00<br>
-                Institut Teknologi Del (2024 - 2028)</p>
+                    <h2>Pendidikan</h2>
+                    <hr>
 
-                <!-- List tidak berurutan -->
-                <ul>
-                    <li>SMA Negeri 2 Lintongnihuta</li>
-                    <li>SMP Negeri 1 Garoga</li>
-                    <li>SD Negeri 173215 Gajoga Jae</li>
-                </ul>
+                    <p>
+                        <strong>Sarjana Informatika</strong>&nbsp;|&nbsp;IPK: 3.35/4.00<br>
+                        Institut Teknologi Del (2019 - 2022)
+                    </p>
 
-                <h2>Pengalaman</h2>
-                <hr>
-                <p><b>sekretaris Himpunan</b> | Organisasi<br>
-                Himpunan Mahasiswa Sarjana Informatika (2025 - 2026)</p>
+                    <ul>
+                        <li>SMK Negeri 1 Lumbanjulu</li>
+                        <li>SMP Yayasan Bonapasogit Sejahtera</li>
+                        <li>SD Yayasan Bonapasogit Sejahtera</li>
+                    </ul>
 
-                <p><b>Web Developer</b> | Volunteer<br>
-                Volunteer di Selepas SMA (2020 - 2021)</p>
+                    <h2>Pengalaman</h2>
+                    <hr>
 
-                <p><b>Web Developer</b> | Kerja Praktik<br>
-                Kerja Praktik di Techfazz (April 2021 - September 2021)</p>
+                    <p>
+                        <strong>Divisi Pendidikan</strong>&nbsp;|&nbsp;Himpunan Mahasiswa Sarjana Informatika<br>
+                        (2019 - 2021)
+                    </p>
 
-                <p><b>Dasar Pemrograman</b> | Asisten<br>
-                <b>Pemrograman Berorientasi Objek</b> | Asisten<br>
-                <b>Pengembangan Aplikasi Mobile</b> | Asisten<br>
-                <b>Pengembangan Aplikasi Berbasis Web</b> | Asisten<br>
-                <b>Pengembangan Game</b> | Asisten<br>
-                <b>Pemrograman Berbasis Service</b> | Asisten<br>
-                <b>Pengujian & Pengembangan Perangkat Lunak</b> | Asisten<br>
-                <b>Ethical Hacking & Penetration Testing</b> | Asisten</p>
-            </td>
+                    <p>
+                        <strong>Web Developer</strong>&nbsp;|&nbsp;Volunteer di Selpas SMA<br>
+                        (2020 - 2021)
+                    </p>
 
-            <!-- KOLOM KANAN (Data Diri, Keahlian, Sertifikat, Portfolio) -->
-            <td width="50%" valign="top">
-                <!-- Nama heading level 1 -->
-                <h1>Abdullah Ubaid</h1>
+                    <p>
+                        <strong>Web Developer</strong>&nbsp;|&nbsp;Kerja Praktik di Techazz<br>
+                        (April 2021 - September 2021)
+                    </p>
 
-                <!-- Program studi heading level 3 -->
-                <h3>Sarjana Informatika</h3>
+                    <p><strong>Dasar Pemrograman</strong>&nbsp;|&nbsp;Asisten</p>
+                    <p><strong>Pemrograman Berorientasi Objek</strong>&nbsp;|&nbsp;Asisten</p>
+                    <p><strong>Pengembangan Aplikasi Mobile</strong>&nbsp;|&nbsp;Asisten</p>
+                    <p><strong>Pengembangan Aplikasi Berbasis Web</strong>&nbsp;|&nbsp;Asisten</p>
+                    <p><strong>Pengembangan Game</strong>&nbsp;|&nbsp;Asisten</p>
+                    <p><strong>Pemrograman Berbasis Service</strong>&nbsp;|&nbsp;Asisten</p>
+                    <p><strong>Pengujian &amp; Pengembangan Perangkat Lunak</strong>&nbsp;|&nbsp;Asisten</p>
+                    <p><strong>Ethical Hacking &amp; Penetration Testing</strong>&nbsp;|&nbsp;Asisten</p>
+                    <p><strong>Asisten Dosen</strong>&nbsp;|&nbsp;Institut Teknologi Del (2022 - Sekarang)</p>
+                </td>
 
-                <!-- Email dan WA dibungkus heading 6 -->
-                <h6>Email: abdullah.ubaid@delcom.org<br>WA: +62 812 3456 7890</h6>
+                <td width="58%" valign="top">
+                    <h1>Abdullah Ubaid</h1>
+                    <hr>
 
-                <p>Saya adalah orang yang suka belajar memiliki rasa empati yang tinggi dan menjunjung tinggi tanggung jawab.</p>
+                    <h2>Sarjana Informatika</h2>
 
-                <h2>Keahlian</h2>
-                <hr>
+                    <p><strong>Email:</strong> abdullah.ubaid@delcom.org<br><strong>WA:</strong> +62 812 3456 7890</p>
 
-                <!-- List tidak berurutan -->
-                <p><b>Programming</b></p>
-                <ul>
-                    <li>Java</li>
-                    <li>JavaScript</li>
-                    <li>Kotlin</li>
-                    <li>PHP</li>
-                    <li>Python</li>
-                </ul>
+                    <p>
+                        Saya adalah orang yang suka belajar, memiliki rasa empati yang tinggi,
+                        dan menjunjung tinggi tanggung jawab.
+                    </p>
 
-                <p><b>Framework</b></p>
-                <ul>
-                    <li>Android Compose</li>
-                    <li>Flask</li>
-                    <li>Laravel</li>
-                    <li>NextJS</li>
-                    <li>ReactJS</li>
-                </ul>
+                    <h2>Keahlian</h2>
+                    <hr>
 
-                <p><b>Tools</b></p>
-                <ul>
-                    <li>Katalon</li>
-                    <li>Visual Paradigm</li>
-                    <li>Visual Studio Code</li>
-                </ul>
+                    <h3>Programming</h3>
+                    <ul>
+                        <li>Java</li>
+                        <li>JavaScript</li>
+                        <li>Kotlin</li>
+                        <li>PHP</li>
+                        <li>Python</li>
+                    </ul>
 
-                <!-- Sesuai Hint: List berurutan untuk Sertifikat dan Portfolio -->
-                <h2>Sertifikat</h2>
-                <hr>
-                <ol>
-                    <li>Sertifikasi Pemrograman Web Dasar</li>
-                    <li>Sertifikasi Database SQL Fundamental</li>
-                </ol>
+                    <h3>Framework</h3>
+                    <ul>
+                        <li>Android Compose</li>
+                        <li>Flask</li>
+                        <li>Laravel</li>
+                        <li>NextJS</li>
+                        <li>ReactJS</li>
+                    </ul>
 
-                <h2>Portfolio</h2>
-                <hr>
-                <ol>
-                    <li>Aplikasi Sistem Informasi Akademik</li>
-                    <li>Website E-Commerce Produk Lokal</li>
-                </ol>
-            </td>
-        </tr>
+                    <h3>Tools</h3>
+                    <ul>
+                        <li>Kation</li>
+                        <li>Visual Paradigm</li>
+                        <li>Visual Studio Code</li>
+                    </ul>
+                </td>
+            </tr>
+        </tbody>
     </table>
 
+    <hr>
+
+    <h2>Sertifikat</h2>
+    <ol>
+        <li>Menjadi Back-End Developer Expert dengan JavaScript (November 2023) - Dicoding</li>
+        <li>Menjadi Android Developer Expert (Desember 2023) - Dicoding</li>
+        <li>Menjadi React Web Developer Expert (Desember 2025) - Dicoding</li>
+    </ol>
+
+    <h2>Portfolio</h2>
+    <ol>
+        <li>Forum API | JavaScript | HapiJS</li>
+        <li>Github Expose | Kotlin | Android</li>
+        <li>Kas Tracking | PHP | Laravel</li>
+        <li>Sorun | .NET | Visual Studio</li>
+        <li>Delcom Local Server | C# | Unity</li>
+        <li>Zodiac Portal | Dart | Flutter</li>
+        <li>Tourist Map | Kotlin | Android</li>
+        <li>Carton | C# | Unity (2D)</li>
+        <li>Breaking Loneliness | C# | Unity (3D)</li>
+        <li>Escape from Ignorance | C# | Unity (3D)</li>
+        <li>Delcom Public API | PHP | Laravel</li>
+        <li>Delcom Tasks | Kotlin | Android</li>
+    </ol>
+    </main>
 </body>
 </html>
