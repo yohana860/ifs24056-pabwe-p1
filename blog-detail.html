@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <title>How to Deploy a Web Application Using Docker and NGINX on Your Own Server</title>
+</head>
+<body>
+
+    <!-- 5. Navigasi Proyek (Agar Terhubung) -->
+    <nav>
+        <a href="index.html">1. IMDb Top 3 Movies</a> | 
+        <a href="blog.html">2. Dev Blogs</a> | 
+        <a href="form.html">3. Form Pendaftaran Akun</a> | 
+        <a href="cv.html">4. Curriculum Vitae (CV)</a>
+    </nav>
+    <hr>
+
+    <!-- Hint: Detail blog diawali dengan gambar cover dengan lebar 100% -->
+    <img src="https://dev-to-uploads.s3.amazonaws.com/uploads/articles/k8sq4oiy0stnozjd1xgs.png" 
+         alt="Cover Docker and NGINX" 
+         width="100%">
+
+    <br><br>
+
+    <!-- Hint: Informasi author terdiri dari photo, username (bold), dan tanggal dibungkus <span> -->
+    <table>
+        <tr>
+            <td valign="middle">
+                <img src="https://placehold.co/32x32" alt="Avatar" width="32" height="32">
+            </td>
+            <td>
+                <span><b>Vishnu Satheesh</b></span><br>
+                <span>Posted on May 31</span>
+            </td>
+        </tr>
+    </table>
+
+    <!-- Hint: Judul blog menggunakan heading level 1 -->
+    <h1>How to Deploy a Web Application Using Docker and NGINX on Your Own Server</h1>
+
+    <!-- Tag blog -->
+    <p><span>#webdev</span>&nbsp;&nbsp;<span>#devops</span></p>
+
+    <!-- Hint: Garis horizontal untuk memisahkan judul dengan konten -->
+    <hr>
+
+    <!-- Hint: Isi konten blog menggunakan paragraf -->
+    <p>Deploying a web application doesn’t need to be a complicated process. With Docker, NGINX, and your own server, you can get your app live in no time.</p>
+    <p>In this blog, I’ll show you step by step how to serve your app with a domain, route traffic with NGINX, and run it all inside a Docker container. This guide is specifically tailored for a Linux-based server</p>
+
+    <p><b>Step 1 : Setup docker</b></p>
+    <p>First, let’s set up Docker. I’m using a simple React app as an example, but feel free to use any application or codebase of your choice. Create a Dockerfile in your project directory to define how your app should be containerized.</p>
+    
+    <p>Dockerfile:</p>
+    <pre>
+FROM node:20-alpine
+WORKDIR /app
+COPY package*.json ./
+RUN npm install
+COPY . .
+CMD [ "npm", "start" ]
+    </pre>
+
+    <p><b>Step 2 : Build and Run the Docker Container (on your server)</b></p>
+    <p>Once you’ve created your Dockerfile, the next step is to build your Docker image and run it to make sure everything is working as expected.</p>
+
+    <p><b>Conclusion</b></p>
+    <p>Deploying your web application using Docker and NGINX on your own server might sound intimidating at first, but once you break it down, it’s quite manageable.</p>
+    <p>By containerizing your app, setting up NGINX as a reverse proxy, and linking everything together on your VPS, you gain full control over your deployment process.</p>
+
+    <!-- Hint: Garis horizontal untuk memisahkan konten dengan komentar -->
+    <hr>
+
+    <h3>Top comments (0)</h3>
+
+    <!-- Hint: Komentar terdapat photo profile dan textarea (rows=3, placeholder Add to the discussion) -->
+    <table>
+        <tr>
+            <td valign="top">
+                <img src="https://placehold.co/32x32" alt="Comment Avatar" width="32" height="32">
+            </td>
+            <td>
+                <textarea rows="3" cols="50" placeholder="Add to the discussion"></textarea>
+            </td>
+        </tr>
+    </table>
+
+</body>
+</html>

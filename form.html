@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <title>Form Pendaftaran Akun</title>
+</head>
+<body>
+
+    <!-- Navigasi -->
+    <nav>
+        <a href="index.html">1. IMDb Top 3 Movies</a> | 
+        <a href="blog.html">2. Dev Blogs</a> | 
+        <a href="form.html">3. Form Pendaftaran Akun</a> | 
+        <a href="cv.html">4. Curriculum Vitae (CV)</a>
+    </nav>
+    <hr>
+
+    <form action="#" method="post">
+        <fieldset>
+            <legend>Daftar Akun</legend>
+
+            <table>
+                <tr>
+                    <td>Nama Lengkap:</td>
+                    <td><input type="text" name="nama_lengkap"></td>
+                </tr>
+                <tr>
+                    <td>Jenis Kelamin:</td>
+                    <td>
+                        <input type="radio" id="laki" name="gender" value="Laki-Laki">
+                        <label for="laki">Laki-Laki</label>
+                        <input type="radio" id="perempuan" name="gender" value="Perempuan">
+                        <label for="perempuan">Perempuan</label>
+                    </td>
+                </tr>
+                <tr>
+                    <td>Tempat Lahir:</td>
+                    <td><input type="text" name="tempat_lahir"></td>
+                </tr>
+                <tr>
+                    <td>Tanggal Lahir:</td>
+                    <td><input type="date" name="tanggal_lahir"></td>
+                </tr>
+                <tr>
+                    <td>Agama:</td>
+                    <td>
+                        <select name="agama">
+                            <option value="">-- Pilih Agama --</option>
+                            <option value="Islam">Islam</option>
+                            <option value="Katolik">Katolik</option>
+                            <option value="Protestan">Protestan</option>
+                            <option value="Hindu">Hindu</option>
+                            <option value="Buddha">Buddha</option>
+                            <option value="Konghucu">Konghucu</option>
+                        </select>
+                    </td>
+                </tr>
+                <tr>
+                    <td>Hobi:</td>
+                    <td>
+                        <input type="checkbox" id="olahraga" name="hobi" value="Olahraga">
+                        <label for="olahraga">Olahraga</label>
+                        <input type="checkbox" id="membaca" name="hobi" value="Membaca">
+                        <label for="membaca">Membaca</label>
+                        <input type="checkbox" id="ngoding" name="hobi" value="Ngoding">
+                        <label for="ngoding">Ngoding</label>
+                    </td>
+                </tr>
+                <tr>
+                    <td>Password:</td>
+                    <td><input type="password" name="password"></td>
+                </tr>
+                <tr>
+                    <td colspan="2">
+                        <input type="checkbox" id="setuju" name="persetujuan" required>
+                        <label for="setuju">Dengan mendaftar saya setuju dengan Ketentuan dan Kebijakan Privasi Aplikasi.</label>
+                    </td>
+                </tr>
+                <tr>
+                    <td colspan="2">
+                        <input type="reset" value="Reset">
+                        <input type="submit" value="Submit">
+                    </td>
+                </tr>
+            </table>
+
+        </fieldset>
+    </form>
+
+</body>
+</html>
