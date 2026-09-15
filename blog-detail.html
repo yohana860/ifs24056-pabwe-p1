@@ -3,19 +3,14 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-    <meta
-        name="description"
-        content="Panduan cara deploy aplikasi web menggunakan Docker dan NGINX pada server Linux."
-    >
-
+    <meta name="description" content="Panduan deploy aplikasi web menggunakan Docker dan NGINX pada server Linux.">
     <link rel="icon" href="data:,">
-
-    <title>How to Deploy a Web Application Using Docker and NGINX</title>
+    <title>How to Deploy a Web Application Using Docker and NGINX on Your Own Server</title>
 </head>
 <body>
 
-    <nav aria-label="Navigasi utama">
+    <!-- Navigasi utama -->
+    <nav>
         <a href="index.html">1. IMDb Top 3 Movies</a> |
         <a href="blog.html">2. Dev Blogs</a> |
         <a href="form.html">3. Form Pendaftaran Akun</a> |
@@ -24,131 +19,126 @@
 
     <hr>
 
-    <main>
+    <!-- Cover artikel -->
+    <img
+        src="https://dev-to-uploads.s3.amazonaws.com/uploads/articles/k8sq4oiy0stnozjd1xgs.png"
+        alt="Cover Docker and NGINX"
+        width="100%"
+        loading="eager"
+        decoding="async"
+    >
 
-        <img
-            src="https://dev-to-uploads.s3.amazonaws.com/uploads/articles/k8sq4oiy0stnozjd1xgs.png"
-            alt="Cover artikel Docker dan NGINX"
-            width="1200"
-            height="630"
-            loading="eager"
-            decoding="async"
-        >
+    <br><br>
 
-        <br><br>
+    <!-- Informasi author -->
+    <table>
+        <tr>
+            <td valign="middle">
+                <img
+                    src="https://placehold.co/32x32"
+                    alt="Avatar Vishnu Satheesh"
+                    width="32"
+                    height="32"
+                    loading="lazy"
+                    decoding="async"
+                >
+            </td>
+            <td>
+                <span><b>Vishnu Satheesh</b></span><br>
+                <span>Posted on May 31</span>
+            </td>
+        </tr>
+    </table>
 
-        <table>
-            <tr>
-                <td valign="middle">
-                    <img
-                        src="https://placehold.co/32x32"
-                        alt="Avatar Vishnu Satheesh"
-                        width="32"
-                        height="32"
-                        loading="lazy"
-                        decoding="async"
-                    >
-                </td>
+    <h1>How to Deploy a Web Application Using Docker and NGINX on Your Own Server</h1>
 
-                <td>
-                    <span><b>Vishnu Satheesh</b></span><br>
-                    <span>Posted on May 31</span>
-                </td>
-            </tr>
-        </table>
+    <!-- Tag artikel -->
+    <p>
+        <span>#webdev</span>&nbsp;&nbsp;
+        <span>#devops</span>
+    </p>
 
-        <h1>How to Deploy a Web Application Using Docker and NGINX on Your Own Server</h1>
+    <hr>
 
-        <p>
-            <span>#webdev</span>&nbsp;&nbsp;
-            <span>#devops</span>
-        </p>
+    <!-- Isi artikel -->
+    <p>
+        Deploying a web application doesn’t need to be a complicated process.
+        With Docker, NGINX, and your own server, you can get your app live in no time.
+    </p>
 
-        <hr>
+    <p>
+        In this blog, I’ll show you step by step how to serve your app with a domain,
+        route traffic with NGINX, and run it all inside a Docker container.
+        This guide is specifically tailored for a Linux-based server.
+    </p>
 
-        <p>
-            Deploying a web application doesn’t need to be a complicated process.
-            With Docker, NGINX, and your own server, you can get your app live in no time.
-        </p>
+    <p><b>Step 1 : Setup docker</b></p>
 
-        <p>
-            In this blog, I’ll show you step by step how to serve your app with
-            a domain, route traffic with NGINX, and run it all inside a Docker
-            container. This guide is specifically tailored for a Linux-based server.
-        </p>
+    <p>
+        First, let’s set up Docker. I’m using a simple React app as an example,
+        but feel free to use any application or codebase of your choice.
+        Create a Dockerfile in your project directory to define how your app
+        should be containerized.
+    </p>
 
-        <h2>Step 1: Setup Docker</h2>
+    <p>Dockerfile:</p>
 
-        <p>
-            First, let’s set up Docker. I’m using a simple React app as an example,
-            but feel free to use any application or codebase of your choice.
-            Create a Dockerfile in your project directory to define how your app
-            should be containerized.
-        </p>
-
-        <p><b>Dockerfile:</b></p>
-
-        <pre><code>FROM node:20-alpine
+    <pre>FROM node:20-alpine
 WORKDIR /app
 COPY package*.json ./
 RUN npm install
 COPY . .
-CMD [ "npm", "start" ]</code></pre>
+CMD [ "npm", "start" ]</pre>
 
-        <h2>Step 2: Build and Run the Docker Container</h2>
+    <p><b>Step 2 : Build and Run the Docker Container (on your server)</b></p>
 
-        <p>
-            Once you’ve created your Dockerfile, the next step is to build your
-            Docker image and run it to make sure everything is working as expected.
-        </p>
+    <p>
+        Once you’ve created your Dockerfile, the next step is to build your Docker
+        image and run it to make sure everything is working as expected.
+    </p>
 
-        <h2>Conclusion</h2>
+    <p><b>Conclusion</b></p>
 
-        <p>
-            Deploying your web application using Docker and NGINX on your own
-            server might sound intimidating at first, but once you break it down,
-            it’s quite manageable.
-        </p>
+    <p>
+        Deploying your web application using Docker and NGINX on your own server
+        might sound intimidating at first, but once you break it down, it’s quite manageable.
+    </p>
 
-        <p>
-            By containerizing your app, setting up NGINX as a reverse proxy,
-            and linking everything together on your VPS, you gain full control
-            over your deployment process.
-        </p>
+    <p>
+        By containerizing your app, setting up NGINX as a reverse proxy,
+        and linking everything together on your VPS, you gain full control
+        over your deployment process.
+    </p>
 
-        <hr>
+    <hr>
 
-        <section aria-labelledby="comments-title">
-            <h2 id="comments-title">Top comments (0)</h2>
+    <!-- Komentar -->
+    <h3>Top comments (0)</h3>
 
-            <table>
-                <tr>
-                    <td valign="top">
-                        <img
-                            src="https://placehold.co/32x32"
-                            alt="Avatar komentar"
-                            width="32"
-                            height="32"
-                            loading="lazy"
-                            decoding="async"
-                        >
-                    </td>
-
-                    <td>
-                        <label for="discussion">Add to the discussion</label><br>
-                        <textarea
-                            id="discussion"
-                            name="discussion"
-                            rows="3"
-                            cols="50"
-                            placeholder="Add to the discussion"
-                        ></textarea>
-                    </td>
-                </tr>
-            </table>
-        </section>
-
-    </main>
+    <table>
+        <tr>
+            <td valign="top">
+                <img
+                    src="https://placehold.co/32x32"
+                    alt="Comment Avatar"
+                    width="32"
+                    height="32"
+                    loading="lazy"
+                    decoding="async"
+                >
+            </td>
+            <td>
+                <label for="discussion">Add to the discussion</label><br>
+                <textarea
+                    id="discussion"
+                    name="discussion"
+                    rows="3"
+                    cols="50"
+                    placeholder="Add to the discussion"
+                ></textarea>
+            </td>
+        </tr>
+    </table>
 
 </body>
 </html>

@@ -3,13 +3,14 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Form pendaftaran akun aplikasi Delcom Grading.">
+    <meta name="description" content="Form pendaftaran akun aplikasi dengan data pribadi dan pilihan pengguna.">
     <link rel="icon" href="data:,">
     <title>Form Pendaftaran Akun</title>
 </head>
 <body>
 
-    <nav aria-label="Navigasi utama">
+    <!-- Navigasi utama -->
+    <nav>
         <a href="index.html">1. IMDb Top 3 Movies</a> |
         <a href="blog.html">2. Dev Blogs</a> |
         <a href="form.html">3. Form Pendaftaran Akun</a> |
@@ -18,166 +19,173 @@
 
     <hr>
 
-    <main>
-        <h1>Form Pendaftaran Akun</h1>
+    <form action="#" method="post">
 
-        <form action="#" method="post">
-            <fieldset>
-                <legend>Daftar Akun</legend>
+        <fieldset>
+            <legend>Daftar Akun</legend>
 
-                <table>
-                    <tr>
-                        <td>
-                            <label for="nama_lengkap">Nama Lengkap:</label>
-                        </td>
-                        <td>
-                            <input
-                                type="text"
-                                id="nama_lengkap"
-                                name="nama_lengkap"
-                                autocomplete="name"
-                                required
-                            >
-                        </td>
-                    </tr>
+            <table>
+                <!-- Nama Lengkap -->
+                <tr>
+                    <td>
+                        <label for="nama_lengkap">Nama Lengkap:</label>
+                    </td>
+                    <td>
+                        <input
+                            type="text"
+                            id="nama_lengkap"
+                            name="nama_lengkap"
+                            autocomplete="name"
+                            required
+                        >
+                    </td>
+                </tr>
 
-                    <tr>
-                        <td>Jenis Kelamin:</td>
-                        <td>
-                            <input
-                                type="radio"
-                                id="laki"
-                                name="gender"
-                                value="Laki-Laki"
-                                required
-                            >
-                            <label for="laki">Laki-Laki</label>
+                <!-- Jenis Kelamin -->
+                <tr>
+                    <td>Jenis Kelamin:</td>
+                    <td>
+                        <input
+                            type="radio"
+                            id="laki"
+                            name="gender"
+                            value="Laki-Laki"
+                            required
+                        >
+                        <label for="laki">Laki-Laki</label>
 
-                            <input
-                                type="radio"
-                                id="perempuan"
-                                name="gender"
-                                value="Perempuan"
-                            >
-                            <label for="perempuan">Perempuan</label>
-                        </td>
-                    </tr>
+                        <input
+                            type="radio"
+                            id="perempuan"
+                            name="gender"
+                            value="Perempuan"
+                        >
+                        <label for="perempuan">Perempuan</label>
+                    </td>
+                </tr>
 
-                    <tr>
-                        <td>
-                            <label for="tempat_lahir">Tempat Lahir:</label>
-                        </td>
-                        <td>
-                            <input
-                                type="text"
-                                id="tempat_lahir"
-                                name="tempat_lahir"
-                                autocomplete="address-level2"
-                                required
-                            >
-                        </td>
-                    </tr>
+                <!-- Tempat Lahir -->
+                <tr>
+                    <td>
+                        <label for="tempat_lahir">Tempat Lahir:</label>
+                    </td>
+                    <td>
+                        <input
+                            type="text"
+                            id="tempat_lahir"
+                            name="tempat_lahir"
+                            autocomplete="address-level2"
+                            required
+                        >
+                    </td>
+                </tr>
 
-                    <tr>
-                        <td>
-                            <label for="tanggal_lahir">Tanggal Lahir:</label>
-                        </td>
-                        <td>
-                            <input
-                                type="date"
-                                id="tanggal_lahir"
-                                name="tanggal_lahir"
-                                required
-                            >
-                        </td>
-                    </tr>
+                <!-- Tanggal Lahir -->
+                <tr>
+                    <td>
+                        <label for="tanggal_lahir">Tanggal Lahir:</label>
+                    </td>
+                    <td>
+                        <input
+                            type="date"
+                            id="tanggal_lahir"
+                            name="tanggal_lahir"
+                            required
+                        >
+                    </td>
+                </tr>
 
-                    <tr>
-                        <td>
-                            <label for="agama">Agama:</label>
-                        </td>
-                        <td>
-                            <select id="agama" name="agama" required>
-                                <option value="">-- Pilih Agama --</option>
-                                <option value="Islam">Islam</option>
-                                <option value="Katolik">Katolik</option>
-                                <option value="Protestan">Protestan</option>
-                                <option value="Hindu">Hindu</option>
-                                <option value="Buddha">Buddha</option>
-                                <option value="Konghucu">Konghucu</option>
-                            </select>
-                        </td>
-                    </tr>
+                <!-- Agama -->
+                <tr>
+                    <td>
+                        <label for="agama">Agama:</label>
+                    </td>
+                    <td>
+                        <select id="agama" name="agama" required>
+                            <option value="">-- Pilih Agama --</option>
+                            <option value="Islam">Islam</option>
+                            <option value="Katolik">Katolik</option>
+                            <option value="Protestan">Protestan</option>
+                            <option value="Hindu">Hindu</option>
+                            <option value="Buddha">Buddha</option>
+                            <option value="Konghucu">Konghucu</option>
+                        </select>
+                    </td>
+                </tr>
 
-                    <tr>
-                        <td>Hobi:</td>
-                        <td>
-                            <input
-                                type="checkbox"
-                                id="olahraga"
-                                name="hobi"
-                                value="Olahraga"
-                            >
-                            <label for="olahraga">Olahraga</label>
+                <!-- Hobi -->
+                <tr>
+                    <td>Hobi:</td>
+                    <td>
+                        <input
+                            type="checkbox"
+                            id="olahraga"
+                            name="hobi"
+                            value="Olahraga"
+                        >
+                        <label for="olahraga">Olahraga</label>
 
-                            <input
-                                type="checkbox"
-                                id="membaca"
-                                name="hobi"
-                                value="Membaca"
-                            >
-                            <label for="membaca">Membaca</label>
+                        <input
+                            type="checkbox"
+                            id="membaca"
+                            name="hobi"
+                            value="Membaca"
+                        >
+                        <label for="membaca">Membaca</label>
 
-                            <input
-                                type="checkbox"
-                                id="ngoding"
-                                name="hobi"
-                                value="Ngoding"
-                            >
-                            <label for="ngoding">Ngoding</label>
-                        </td>
-                    </tr>
+                        <input
+                            type="checkbox"
+                            id="ngoding"
+                            name="hobi"
+                            value="Ngoding"
+                        >
+                        <label for="ngoding">Ngoding</label>
+                    </td>
+                </tr>
 
-                    <tr>
-                        <td>
-                            <label for="password">Password:</label>
-                        </td>
-                        <td>
-                            <input
-                                type="password"
-                                id="password"
-                                name="password"
-                                autocomplete="new-password"
-                                required
-                            >
-                        </td>
-                    </tr>
+                <!-- Password -->
+                <tr>
+                    <td>
+                        <label for="password">Password:</label>
+                    </td>
+                    <td>
+                        <input
+                            type="password"
+                            id="password"
+                            name="password"
+                            autocomplete="new-password"
+                            required
+                        >
+                    </td>
+                </tr>
 
-                    <tr>
-                        <td colspan="2">
-                            <input
-                                type="checkbox"
-                                id="setuju"
-                                name="persetujuan"
-                                required
-                            >
-                            <label for="setuju">
-                                Dengan mendaftar saya setuju dengan Ketentuan
-                                dan Kebijakan Privasi Aplikasi.
-                            </label>
-                        </td>
-                    </tr>
+                <!-- Persetujuan -->
+                <tr>
+                    <td colspan="2">
+                        <input
+                            type="checkbox"
+                            id="setuju"
+                            name="persetujuan"
+                            required
+                        >
+                        <label for="setuju">
+                            Dengan mendaftar saya setuju dengan Ketentuan dan Kebijakan Privasi Aplikasi.
+                        </label>
+                    </td>
+                </tr>
 
-                    <tr>
-                        <td colspan="2">
-                            <input type="reset" value="Reset">
-                            <input type="submit" value="Submit">
-                        </td>
-                    </tr>
-                </table>
-            </fieldset>
-        </form>
-    </main>
+                <!-- Tombol -->
+                <tr>
+                    <td colspan="2">
+                        <input type="reset" value="Reset">
+                        <input type="submit" value="Submit">
+                    </td>
+                </tr>
+            </table>
+
+        </fieldset>
+
+    </form>
 
 </body>
 </html>
